@@ -3,7 +3,6 @@ import TruckCard from './TruckCard';
 import Map from './Map';
 import Modal from './Modal';
 import mobileLogo from '../assets/rioseo-logo-mobile.png';
-import locationIcon from '../assets/location-icon.png';
 import axios from 'axios';
 import testData from './TestData';
 import '../styles/Home.css';
@@ -32,8 +31,7 @@ const MobileHome = () => {
             <nav className="nav-mobile">
                 <i className="fas fa-bars nav-left"></i>
                 <img className="nav-logo" src={mobileLogo} alt="logo" />
-                <i className="fa fa-map-marker nav-right" aria-hidden="true"></i>
-                <img className="location-icon nav-right" src={locationIcon} alt="location-icon" />
+                <i className="location-icon fa fa-map-marker nav-right" aria-hidden="true"></i>
             </nav>
 
         {mapSelected ? 
@@ -42,6 +40,7 @@ const MobileHome = () => {
                 <Map 
                     className="MobileMap"
                     clickedTruck={clickedTruck} 
+                    showModal={showModal}
                 />
                 <Modal 
                     clickedTruck={clickedTruck}

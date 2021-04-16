@@ -16,7 +16,7 @@ const HomeSwitch = () => {
     
     return (
         <>
-            {windowWidth > 480 ?
+            {windowWidth > 800 ?
                 <DesktopHome /> :
                 <MobileHome />
             }

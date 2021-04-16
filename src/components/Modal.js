@@ -1,5 +1,8 @@
 import React from 'react';
-import '../styles/Modal.css'
+import car from '../assets/car.png'
+import phone from '../assets/phone-icon.png';
+import mountain from '../assets/mountain.png'
+import '../styles/Modal.css';
 
 const Modal = ({ clickedTruck, showModal, setShowModal }) => {
 
@@ -9,39 +12,54 @@ const Modal = ({ clickedTruck, showModal, setShowModal }) => {
     function handleDate(day, id) {
         let today = new Date().getDay();
         if (today === id) {
-            return <p id={id}><strong>{day} {clickedTruck.sunday_open} - {clickedTruck.sunday_close}</strong></p>
+            return (
+                <div>
+                    <p className="modal-date" id={id}><strong>{day}</strong></p>
+                    <p className="modal-times"><strong>{clickedTruck.sunday_open} - {clickedTruck.sunday_close}</strong></p>
+                </div>
+            )
         }
-        return <p id={id}>{day} {clickedTruck.sunday_open} - {clickedTruck.sunday_close}</p>
+        return (
+        <div>
+            <p className="modal-date" id={id}>{day}</p>
+            <p className="modal-times">{clickedTruck.sunday_open} - {clickedTruck.sunday_close}</p>
+        </div>
+        )
     }
 
     return (
         <>
                 {showModal ? 
                     <div className="modal-div">
-                        <div className="close text-right m-3" onClick={() => setShowModal(false)}>X</div>
-                        <p>{name}</p>
-                        <br></br>
-                        <p>{address} </p>
-                        <p>{city}, {state} {postal_code}</p>
-                            <div className="phone">
-                                <i className="fas fa-phone-square"></i>
-                                <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
-                            </div>
+                        <div className="close-icon text-right" onClick={() => setShowModal(false)}>X</div>
+                        <img className="mountain" src={mountain} alt="mountain"/>
+                        <div className="modal-text">
+                            <h4>{name}</h4>
                             <br></br>
-                            <br></br>
-                            <div className="directions">
-                                <i class="fas fa-car"></i>
-                                <p href={directions} target="_blank">Get Directions</p>
+                            <p>{address} </p>
+                            <p>{city}, {state} {postal_code}</p>
+                            <div className="modal-icons">
+                                <div className="phone">
+                                    <img src={phone} alt="phone"/>
+                                    <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
+                                </div>
+                                <div className="directions">
+                                    <img src={car} alt="car"/>
+                                    <a href={directions} rel="noreferrer" target="_blank" className="car">Get Directions</a>
+                                </div>
                             </div>
-                        <br></br>
-                        {handleDate('Monday', 1)}
-                        {handleDate('Tuesday', 2)}
-                        {handleDate('Wednesday', 3)}
-                        {handleDate('Thursday', 4)}
-                        {handleDate('Friday', 5)}
-                        {handleDate('Saturday', 6)}
-                        {handleDate('Sunday', 0)}
-                    <a className="btn btn-dark btn-sm btn-block" href={clickedTruck.url} target="_blank" rel="noreferrer">VIEW FULL DETAILS</a>
+                            <br></br><br></br>
+                            <div className="modal-dates">
+                                {handleDate('Monday', 1)}
+                                {handleDate('Tuesday', 2)}
+                                {handleDate('Wednesday', 3)}
+                                {handleDate('Thursday', 4)}
+                                {handleDate('Friday', 5)}
+                                {handleDate('Saturday', 6)}
+                                {handleDate('Sunday', 0)}
+                            </div>
+                        </div>
+                    <a className="details-btn btn btn-dark btn-sm btn-block" href={clickedTruck.url} target="_blank" rel="noreferrer">VIEW FULL DETAILS</a>
                     </div>
                 :
                 null

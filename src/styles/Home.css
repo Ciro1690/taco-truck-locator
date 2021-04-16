@@ -1,3 +1,7 @@
+.desktop-home {
+    margin: 0 100px;
+}
+
 .nav-desktop {
     height: 75px;
     padding: 20px 35px 15px 35px;
@@ -6,6 +10,10 @@
 
 .location-desktop, .menu-desktop {
     margin: 10px;
+}
+
+.location-icon {
+    color: white;
 }
 
 .nav-mobile {
@@ -45,6 +53,7 @@
     width: 50%;
     padding: 15px;
     font-size: 16px;
+    border: none
 }
 
 .orange {
@@ -70,9 +79,6 @@
     flex-direction: column;
 }
 
-.desktop-truck-card {
-    overflow: scroll;
-    height: 500px;
-    border: 1px solid gray;
-    height: 80vh;
+.filtered-map {
+    filter: brightness(30%);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/TruckCard.css';
+import phone from '../assets/phone-icon.png';
 
 const TruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSelected}) => {
 
@@ -61,7 +62,7 @@ const TruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSe
                     </button>
                     <h4 className="open">Open today until {time}</h4>
                     <div className="phone">
-                        <i className="fas fa-phone-square"></i>
+                        <img src={phone} alt="phone" />
                         <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
                     </div>
                     <br></br>
@@ -82,7 +83,7 @@ const TruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSe
                         </button>
                         <h4 className="open">Open today until {time}</h4>
                         <div className="desktop-phone">
-                            <i className="fas fa-phone-square"></i>
+                            <img src={phone} alt="phone" />
                             <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
                         </div>
                         <br></br>

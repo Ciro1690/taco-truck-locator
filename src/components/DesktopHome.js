@@ -28,7 +28,7 @@ const Home = () => {
     }
 
     return (
-        <>
+        <div className="desktop-home">
             <nav className="nav-desktop">
                 <img className="nav-left" src={logo} alt="logo" />
                 <p className="location-desktop nav-right"><img src={locationIcon} alt="location-icon" />Truck Locator</p>
@@ -55,7 +55,10 @@ const Home = () => {
                     </div>
                     {mapSelected ?
                     <div className="col">
-                        <Map clickedTruck={clickedTruck} />
+                        <Map 
+                            clickedTruck={clickedTruck} 
+                            showModal={showModal}
+                        />
                         <Modal
                             clickedTruck={clickedTruck}
                             showModal={showModal}
@@ -68,7 +71,7 @@ const Home = () => {
                     }
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

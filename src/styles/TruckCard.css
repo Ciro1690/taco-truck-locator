@@ -5,6 +5,24 @@
   padding: 15px;
 }
 
+.desktop-truck-card {
+    overflow: scroll;
+    height: 500px;
+    border: 1px solid lightgray;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.desktop-truck-card::-webkit-scrollbar {
+  width: .5em;
+  border-radius: 5px;
+}
+ 
+.desktop-truck-card::-webkit-scrollbar-thumb {
+  background-color: #444444;
+  outline: 1px solid #444444;
+}
+
 .desktop-card {
   width: 100%;
   text-align: left;
@@ -61,13 +79,15 @@
 }
 
 .mobile-btn {
-    padding: 10px 25px 10px 25px;
-    border-radius: 12px;
-    margin: 5px;
-    display:inline-block;
+    border-radius: 5px;
+    margin: 2px;
+    display: inline-block;
+    width: 45%;
+    font-size: 80%;
+    color: lightgray;
 }
 
-.phone, .desktop-phone, .phone-number, .directions {
+.phone, .desktop-phone, .phone-number, .directions, .car {
     color: #f39231;
 }
 

@@ -2,11 +2,17 @@ import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 require('dotenv').config()
 
-const Map = ({clickedTruck}) => {
+const Map = ({clickedTruck, showModal}) => {
     const location = {lat: clickedTruck.latitude, lng: clickedTruck.longitude}
-    const mapStyles = {
+
+    const filteredMapStyles = {
         height: "75vh",
-        width: "100%"
+        width: "100%",
+        filter: "brightness(30%)"
+    }
+    const mapStyles = {
+        height: "74vh",
+        width: "62vh"
     }
 
     return (
@@ -14,7 +20,7 @@ const Map = ({clickedTruck}) => {
             <LoadScript
                 googleMapsApiKey= {process.env.REACT_APP_API_KEY}>
             <GoogleMap
-                mapContainerStyle = { mapStyles }
+                mapContainerStyle = {showModal ? filteredMapStyles : mapStyles}
                 zoom = { 13 }
                 center = { location } 
             >
