@@ -1,0 +1,65 @@
+.MobileCard {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  padding: 15px;
+}
+
+.DesktopCard {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.DesktopMain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.map {
+    width: 50%;
+    background-color: #d8d8d8;
+}
+
+.InnerCard {
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.DesktopInnerCard {
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+.SelectedInnerCard {
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.open {
+    color: #47a07a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.MobileBtn {
+    padding: 10px 25px 10px 25px;
+    border-radius: 12px;
+    margin: 5px;
+    display:inline-block;
+}
+
+.phone, .phone-number, .directions {
+    color: #f39231;
+}
+
+.fa-car {
+    float: left;
+}
+
+h4 {
+    font-size: 18px;
+}

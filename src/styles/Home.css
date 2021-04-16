@@ -1,0 +1,78 @@
+.nav-desktop {
+    height: 75px;
+    padding: 20px 35px 15px 35px;
+    margin-bottom: 40px;
+}
+
+.location-desktop, .menu-desktop {
+    margin: 10px;
+}
+
+.nav-mobile {
+    height: 25%;
+    background-color: #444444;
+    padding: 20px 35px 15px 35px;
+    font-size: 35px;
+}
+
+.fas fa-bars {
+    color: white;
+}
+.fa-map-marker, .fa-bars  {
+    color: white;
+}
+
+.nav-logo {
+    padding-bottom: 15px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.navButtons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10
+}
+
+.navList, .navMap {
+    width: 50%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.orange {
+    color: white;
+    background-color: #f39231;
+}
+
+.white {
+    background-color: white;
+    color: #f39231;  
+}
+
+.wrapper {
+    position: relative;
+}
+
+.empty {
+    background-color: #d8d8d8;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.DesktopTruckCard {
+    overflow: scroll;
+    height: 500px;
+    border: 1px solid gray;
+    height: 80vh;
+}
