@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import MobileHome from './MobileHome'
-import DesktopHome from './DesktopHome'
+import MobileHome from './MobileHome';
+import DesktopHome from './DesktopHome';
 
 const HomeSwitch = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);

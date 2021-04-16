@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/TruckCard.css'
+import '../styles/TruckCard.css';
 
 const TruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSelected}) => {
 
-    const directions = `https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${truck.latitude},${truck.longitude}`
+    const directions = `https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${truck.latitude},${truck.longitude}`;
     let time;
 
     function getDay() {
@@ -31,58 +31,63 @@ const TruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSe
                 break;
             default:
         }
-    }
+    };
 
     function mapTruck() {
-        setClickedTruck(truck)
-        setShowModal(true)
-        setMapSelected(true)
+        setClickedTruck(truck);
+        setShowModal(true);
+        setMapSelected(true);
     }
 
     function justMap() {
-        setClickedTruck(truck)
-        setMapSelected(true)
+        setClickedTruck(truck);
+        setShowModal(false);
+        setMapSelected(true);
     }
 
     getDay()
-    const { name, address, state, city, postal_code} = truck
+    const { name, address, state, city, postal_code} = truck;
 
     return (
         <>
-            <div className="MobileCard d-sm-none">
-                <div className="InnerCard">
+            <div className="mobile-card d-sm-none">
+                <div className="inner-card">
                     <h4>{name}</h4><br></br>
-                    <a onClick={justMap}>
+                    <button 
+                        className="address"
+                        onClick={justMap}>
                         <h4>{address}</h4>
                         <h4>{city}, {state} {postal_code}</h4>
-                    </a>
+                    </button>
                     <h4 className="open">Open today until {time}</h4>
                     <div className="phone">
                         <i className="fas fa-phone-square"></i>
                         <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
                     </div>
                     <br></br>
-                        <a href={directions} rel="noreferrer" target="_blank" className="MobileBtn btn btn-dark btn-sm">DIRECTIONS</a>
-                        <button className="MobileBtn btn btn-dark btn-sm" onClick={mapTruck}>MORE INFO</button>
+                        <a href={directions} rel="noreferrer" target="_blank" className="mobile-btn btn btn-dark btn-sm">DIRECTIONS</a>
+                        <button className="mobile-btn btn btn-dark btn-sm" onClick={mapTruck}>MORE INFO</button>
                 </div>
             </div>
             
-            <div className="DesktopMain d-none d-sm-block">
-                <div className="DesktopCard">
-                    <div className={clickedTruck.name === truck.name ? "SelectedInnerCard" : "DesktopInnerCard"}>
+            <div className="desktop-main d-none d-sm-block">
+                <div className="desktop-card">
+                    <div className={clickedTruck.name === truck.name ? "selected-inner-card" : "desktop-inner-card"}>
                         <h2>{name}</h2>
-                        <a onClick={justMap}>
+                        <button 
+                            onClick={justMap}
+                            className="address">
                             <h4>{address}</h4>
                             <h4>{city}, {state} {postal_code}</h4>
-                        </a>
+                        </button>
                         <h4 className="open">Open today until {time}</h4>
-                        <div className="phone">
+                        <div className="desktop-phone">
                             <i className="fas fa-phone-square"></i>
                             <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
                         </div>
                         <br></br>
-                        <a href={directions} rel="noreferrer" target="_blank" className="MobileBtn btn btn-dark btn-sm">DIRECTIONS</a>
-                        <button className="MobileBtn btn btn-dark btn-sm" onClick={mapTruck}>MORE INFO</button>
+                        <a href={directions} rel="noreferrer" target="_blank" className="mobile-btn btn btn-dark btn-sm">DIRECTIONS</a>
+                        <button className="mobile-btn btn btn-dark btn-sm" onClick={mapTruck}>MORE INFO</button>
                     </div>
                 </div>
             </div>

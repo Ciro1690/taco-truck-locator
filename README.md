@@ -1,8 +1,10 @@
-## Taco Truck Locator Code Assessment
+## Taco Truck Locator
 
 Taco Truck Co. would like a simple truck locator to be created. This locator will show the businesses where the taco trucks are parked in front of.
 
-You are given an API call that provides you with this location data in JSON format. The API call will respond to GET requests to the following URL: https://my.api.mockaroo.com/locations.json?key=a45f1200
+Using the following API URL, https://my.api.mockaroo.com/locations.json?key=a45f1200, the truck state is populated through an axios GET request. If the GET request responds with an error, there is dummy data to populate the application.
+
+Leveraging React's state management and bootstrap styling conventions, the truck locator app was designed with mobile first in mind. Upon loading, the state is populated with data from the trucks, as well as accompanying Google Maps API data.
 
 Here is a single locations sample data:
 ```json
@@ -32,20 +34,3 @@ Here is a single locations sample data:
     "sunday_close": "4:05 PM"
 }
 ```
-
-__The final project should look similar these mocks:__ 
-1. Initial load screen will present a list of locations.
-![alt text](mocks/desktop-1.png "Desktop Mocks")
-
-2. When you click or tap on a location address card from the list, a static map with that location latitude and longitude should be asyncronously rendered.
-![alt text](mocks/desktop-2.png "Desktop Mocks")
-
-3. When you click or tap the "MORE INFO" button, an overlay with extended location data will load asyncronosly.
-![alt text](mocks/desktop-3.png "Desktop Mocks")
-
-4. From the overlay, the "VIEW FULL DETAILS" should open the location's url in a new window.
-
-5. When you click or tap "DIRECTIONS", open Google Maps in a new window with the locations address populated as the end point for the route.
-
-6. The website should be responsive such that the mobile interface looks like the following mocks.
-![alt text](mocks/mobile.png "Mobile Mocks")

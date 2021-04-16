@@ -1,11 +1,11 @@
-.MobileCard {
+.mobile-card {
   width: 100%;
   text-align: left;
   margin: auto;
   padding: 15px;
 }
 
-.DesktopCard {
+.desktop-card {
   width: 100%;
   text-align: left;
   margin: auto;
@@ -13,7 +13,22 @@
   font-size: 12px;
 }
 
-.DesktopMain {
+.desktop-phone {
+    font-size: 14px;
+}
+
+.address {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-align: left;
+}
+
+.desktop-main {
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -23,17 +38,17 @@
     background-color: #d8d8d8;
 }
 
-.InnerCard {
+.inner-card {
     border: 1px solid lightgray;
     padding: 20px;
 }
 
-.DesktopInnerCard {
+.desktop-inner-card {
     border: 1px solid lightgray;
     padding: 15px;
 }
 
-.SelectedInnerCard {
+.selected-inner-card {
     border: 1px solid lightgray;
     background-color: whitesmoke;
     padding: 15px;
@@ -45,14 +60,14 @@
     padding-bottom: 5px;
 }
 
-.MobileBtn {
+.mobile-btn {
     padding: 10px 25px 10px 25px;
     border-radius: 12px;
     margin: 5px;
     display:inline-block;
 }
 
-.phone, .phone-number, .directions {
+.phone, .desktop-phone, .phone-number, .directions {
     color: #f39231;
 }
 
