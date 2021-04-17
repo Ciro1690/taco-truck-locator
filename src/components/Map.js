@@ -11,8 +11,8 @@ const Map = ({clickedTruck, showModal}) => {
         filter: "brightness(30%)"
     }
     const mapStyles = {
-        height: "74vh",
-        width: "62vh"
+        height: "75vh",
+        width: "100%"
     }
 
     return (
