@@ -5,12 +5,12 @@ require('dotenv').config()
 const MobileMap = ({ clickedTruck, showModal }) => {
     const location = { lat: clickedTruck.latitude, lng: clickedTruck.longitude }
     const filteredMapStyles = {
-        height: "78vh",
+        height: "83vh",
         width: "100%",
         filter: "brightness(30%)"
     }
     const mapStyles = {
-        height: "78vh",
+        height: "86vh",
         width: "100%"
     }
 
