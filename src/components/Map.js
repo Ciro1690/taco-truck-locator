@@ -4,7 +4,6 @@ require('dotenv').config()
 
 const Map = ({clickedTruck, showModal}) => {
     const location = {lat: clickedTruck.latitude, lng: clickedTruck.longitude}
-
     const filteredMapStyles = {
         height: "75vh",
         width: "100%",
