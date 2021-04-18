@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import TruckCard from './TruckCard';
-import Map from './Map';
-import Modal from './Modal';
-import logo from '../assets/rioseo-logo.png';
-import locationIcon from '../assets/location-icon.png';
+import DesktopTruckCard from './DesktopTruckCard';
+import Map from '../Map';
+import DesktopModal from './DesktopModal';
+import logo from '../../assets/rioseo-logo.png';
+import locationIcon from '../../assets/location-icon.png';
 import axios from 'axios';
-import testData from './TestData';
-import '../styles/Home.css';
+import testData from '../TestData';
+import '../../styles/Home.css';
 
 const Home = () => {
 
@@ -41,7 +41,7 @@ const Home = () => {
                     <div className="desktop-truck-card col">
                         {trucks.length > 0 ?
                             trucks.map(truck => (
-                                <TruckCard
+                                <DesktopTruckCard
                                     key={truck.id}
                                     truck={truck}
                                     clickedTruck={clickedTruck}
@@ -59,7 +59,7 @@ const Home = () => {
                             clickedTruck={clickedTruck} 
                             showModal={showModal}
                         />
-                        <Modal
+                        <DesktopModal
                             clickedTruck={clickedTruck}
                             showModal={showModal}
                             setShowModal={setShowModal}

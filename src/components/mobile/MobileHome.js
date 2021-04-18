@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import TruckCard from './TruckCard';
-import Map from './Map';
-import Modal from './Modal';
-import mobileLogo from '../assets/rioseo-logo-mobile.png';
+import MobileTruckCard from './MobileTruckCard';
+import MobileModal from './MobileModal';
+import Map from '../Map';
+import mobileLogo from '../../assets/rioseo-logo-mobile.png';
 import axios from 'axios';
-import testData from './TestData';
-import '../styles/Home.css';
+import testData from '../TestData';
+import '../../styles/Home.css';
 
 const MobileHome = () => {
 
@@ -42,7 +42,7 @@ const MobileHome = () => {
                     clickedTruck={clickedTruck} 
                     showModal={showModal}
                 />
-                <Modal 
+                <MobileModal 
                     clickedTruck={clickedTruck}
                     showModal={showModal}
                     setShowModal={setShowModal}
@@ -57,7 +57,7 @@ const MobileHome = () => {
             <>
             {trucks.length > 0 ?
                 trucks.map(truck => (
-                    <TruckCard
+                    <MobileTruckCard
                     key={truck.id}
                     truck={truck}
                     setClickedTruck={setClickedTruck}                                               

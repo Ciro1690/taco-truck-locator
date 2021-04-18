@@ -1,10 +1,10 @@
 import React from 'react';
-import car from '../assets/car.png'
-import phone from '../assets/phone-icon.png';
-import mountain from '../assets/mountain.png'
-import '../styles/Modal.css';
+import car from '../../assets/car.png'
+import phone from '../../assets/phone-icon.png';
+import mountain from '../../assets/mountain.png'
+import '../../styles/Modal.css';
 
-const Modal = ({ clickedTruck, showModal, setShowModal }) => {
+const MobileModal = ({ clickedTruck, showModal, setShowModal }) => {
 
     const { name, address, city, state, postal_code, latitude, longitude } = clickedTruck
     const directions = `https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${latitude},${longitude}`
@@ -69,4 +69,4 @@ const Modal = ({ clickedTruck, showModal, setShowModal }) => {
     )
 }
 
-export default Modal;
+export default MobileModal;

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/TruckCard.css';
-import phone from '../assets/phone-icon.png';
+import '../../styles/TruckCard.css';
+import phone from '../../assets/phone-icon.png';
 
-const TruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSelected}) => {
+const DesktopTruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSelected}) => {
 
     const directions = `https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination=${truck.latitude},${truck.longitude}`;
     let time;
@@ -96,4 +96,4 @@ const TruckCard = ({truck, clickedTruck, setClickedTruck, setShowModal, setMapSe
     )
 }
 
-export default TruckCard;
+export default DesktopTruckCard;
