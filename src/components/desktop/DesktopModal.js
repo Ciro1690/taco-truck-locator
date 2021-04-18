@@ -1,7 +1,7 @@
 import React from 'react';
 import car from '../../assets/car.png'
 import phone from '../../assets/phone-icon.png';
-import mountain from '../../assets/mountain.png'
+import mountain from '../../assets/mountains.png'
 import '../../styles/desktop/DesktopModal.css';
 
 const DesktopModal = ({ clickedTruck, showModal, setShowModal }) => {
@@ -11,18 +11,20 @@ const DesktopModal = ({ clickedTruck, showModal, setShowModal }) => {
 
     function handleDate(day, id) {
         let today = new Date().getDay();
+        const weekDate = `${day.toLowerCase()}_open`
+
         if (today === id) {
             return (
                 <div>
                     <p className="modal-date" id={id}><strong>{day}</strong></p>
-                    <p className="modal-times"><strong>{clickedTruck.sunday_open} - {clickedTruck.sunday_close}</strong></p>
+                    <p className="modal-times"><strong>{clickedTruck[weekDate]} - {clickedTruck[weekDate]}</strong></p>
                 </div>
             )
         }
         return (
             <div>
                 <p className="modal-date" id={id}>{day}</p>
-                <p className="modal-times">{clickedTruck.sunday_open} - {clickedTruck.sunday_close}</p>
+                <p className="modal-times">{clickedTruck[weekDate]} - {clickedTruck[weekDate]}</p>
             </div>
         )
     }
@@ -31,7 +33,7 @@ const DesktopModal = ({ clickedTruck, showModal, setShowModal }) => {
         <>
             {showModal ?
                 <div className="modal-div">
-                    <div className="close-icon text-right" onClick={() => setShowModal(false)}>X</div>
+                    <div className="close-icon text-right" onClick={() => setShowModal(false)}>x</div>
                     <img className="mountain" src={mountain} alt="mountain" />
                     <div className="modal-text">
                         <h4>{name}</h4>
