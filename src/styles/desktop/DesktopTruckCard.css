@@ -1,11 +1,10 @@
 .desktop-truck-card {
     overflow: scroll;
-    height: 500px;
     border: 1px solid #eeeeee;
-    height: 80vh;
     overflow-x: hidden;
     margin-left: 6vh;
     height: 70vh;
+    width: 40%;
 }
 
 .desktop-truck-card::-webkit-scrollbar {
@@ -46,12 +45,12 @@
 }
 
 .address h4 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 11px;
 }
 
 .card-name {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .desktop-main {
@@ -82,14 +81,15 @@
     color: #47a07a;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 13px;
 }
 
 .phone, .desktop-phone, .phone-number, .directions, .car {
     color: #f39231;
 }
 
-.phone-number {
-    font-size: 14px;
+.phone-number, .directions {
+    font-size: 13px;
 }
 
 .fa-car {
@@ -101,7 +101,7 @@
     margin-right: 8%;
 }
 
-.desktop-btn {
+.details-btn, .desktop-btn {
     padding: 7px;
     border-radius: 5px;
     display: inline-block;

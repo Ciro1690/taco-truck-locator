@@ -54,7 +54,7 @@ const Home = () => {
                         }
                     </div>
                     {mapSelected ?
-                    <div className="col">
+                    <div className="col map">
                         <Map 
                             clickedTruck={clickedTruck} 
                             showModal={showModal}

@@ -11,20 +11,21 @@ const MobileModal = ({ clickedTruck, showModal, setShowModal }) => {
 
     function handleDate(day, id) {
         let today = new Date().getDay();
-        const weekDate = `${day.toLowerCase()}_open`
+        const weekDateOpen = `${day.toLowerCase()}_open`
+        const weekDateClose = `${day.toLowerCase()}_close`
 
         if (today === id) {
             return (
                 <div>
                     <p className="modal-date" id={id}><strong>{day}</strong></p>
-                    <p className="modal-times"><strong>{clickedTruck[weekDate]} - {clickedTruck[weekDate]}</strong></p>
+                    <p className="modal-times"><strong>{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</strong></p>
                 </div>
             )
         }
         return (
             <div>
                 <p className="modal-date" id={id}>{day}</p>
-                <p className="modal-times">{clickedTruck[weekDate]} - {clickedTruck[weekDate]}</p>
+                <p className="modal-times">{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</p>
             </div>
         )
     }

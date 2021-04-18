@@ -11,20 +11,21 @@ const DesktopModal = ({ clickedTruck, showModal, setShowModal }) => {
 
     function handleDate(day, id) {
         let today = new Date().getDay();
-        const weekDate = `${day.toLowerCase()}_open`
+        const weekDateOpen = `${day.toLowerCase()}_open`
+        const weekDateClose = `${day.toLowerCase()}_close`
 
         if (today === id) {
             return (
                 <div>
                     <p className="modal-date" id={id}><strong>{day}</strong></p>
-                    <p className="modal-times"><strong>{clickedTruck[weekDate]} - {clickedTruck[weekDate]}</strong></p>
+                    <p className="modal-times"><strong>{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</strong></p>
                 </div>
             )
         }
         return (
             <div>
                 <p className="modal-date" id={id}>{day}</p>
-                <p className="modal-times">{clickedTruck[weekDate]} - {clickedTruck[weekDate]}</p>
+                <p className="modal-times">{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</p>
             </div>
         )
     }
@@ -36,10 +37,10 @@ const DesktopModal = ({ clickedTruck, showModal, setShowModal }) => {
                     <div className="close-icon text-right" onClick={() => setShowModal(false)}>x</div>
                     <img className="mountain" src={mountain} alt="mountain" />
                     <div className="modal-text">
-                        <h4>{name}</h4>
+                        <h4 className="modal-name">{name}</h4>
                         <br></br>
-                        <p>{address} </p>
-                        <p>{city}, {state} {postal_code}</p>
+                        <h4 className="modal-address">{address} </h4>
+                        <h4 className="modal-address">{city}, {state} {postal_code}</h4>
                         <div className="modal-icons">
                             <div className="phone">
                                 <img src={phone} alt="phone" />
