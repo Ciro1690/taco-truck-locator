@@ -1,14 +1,15 @@
 .mobile-modal-div {
     position: absolute;
     left: 7%;
-    top: 6%;
+    top: 12%;
+    bottom: 12%;
     z-index: 5;
     background: white;
     text-align: left;
     line-height: 0.2;
     padding: 9px;
     width: 85%;
-    height: 87%;
+    height: 76%;
 }
 
 .mobile-close-icon {

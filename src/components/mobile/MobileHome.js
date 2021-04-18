@@ -36,7 +36,7 @@ const MobileHome = () => {
 
         {mapSelected ? 
         <>
-            <div className="wrapper">
+            <div className="mobile-map">
                 <MobileMap 
                     className="MobileMap"
                     clickedTruck={clickedTruck} 
@@ -48,10 +48,10 @@ const MobileHome = () => {
                     setShowModal={setShowModal}
                 />
             </div>
-                <div className="nav-buttons">
-                    <button onClick={() => setMapSelected(false)} className="white nav-list">List</button>
-                    <button className="orange nav-map">Map</button>
-                </div>
+            <div className="nav-buttons">
+                <button onClick={() => setMapSelected(false)} className="white nav-list">List</button>
+                <button className="orange nav-map">Map</button>
+            </div>
             </>
         :
             <>

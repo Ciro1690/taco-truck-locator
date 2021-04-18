@@ -1,5 +1,5 @@
 .nav-mobile {
-    height: 11vh;
+    height: 7vh;
     background-color: #444444;
     padding: 7px 35px 15px 35px;
     font-size: 35px;
@@ -29,10 +29,10 @@
 }
 
 .nav-buttons {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 10
+    z-index: 10;
 }
 
 .nav-list, .nav-map {
