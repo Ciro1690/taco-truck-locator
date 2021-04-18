@@ -1,39 +1,35 @@
 .mobile-card {
-  width: 100%;
-  text-align: left;
-  margin: auto;
-  padding: 15px;
-}
-
-.desktop-truck-card {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    padding: 15px;
     overflow: scroll;
-    height: 500px;
-    border: 1px solid lightgray;
-    height: 80vh;
     overflow-x: hidden;
-    margin-left: 6vh;
 }
 
-.desktop-truck-card::-webkit-scrollbar {
-  width: .5em;
-  border-radius: 5px;
-}
- 
-.desktop-truck-card::-webkit-scrollbar-thumb {
-  background-color: #444444;
-  outline: 1px solid #444444;
+.mobile-card::-webkit-scrollbar {
+    width: .5em;
+    border-radius: 5px;
 }
 
-.desktop-card {
-  width: 100%;
-  text-align: left;
-  margin: auto;
-  padding: 15px;
-  font-size: 12px;
+.mobile-card::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a7a6a6;
+    outline: none;
 }
 
-.desktop-phone {
-    font-size: 14px;
+.card-text {
+    padding: 5px;
+    margin-bottom: 3vh;
+}
+
+.mobile-card-name {
+    font-size: 16px;
+}
+
+.address h4 {
+    font-size: 13px;
+    line-height: 11px;
 }
 
 .address {
@@ -47,11 +43,6 @@
     text-align: left;
 }
 
-.desktop-main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
 .map {
     width: 50%;
     background-color: #d8d8d8;
@@ -62,26 +53,21 @@
     padding: 20px;
 }
 
-.desktop-inner-card {
-    border: 1px solid lightgray;
-    padding: 15px;
-}
-
-.selected-inner-card {
-    border: 1px solid lightgray;
-    background-color: whitesmoke;
-    padding: 15px;
-}
-
 .open {
     color: #47a07a;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 13px;
 }
 
-.mobile-btn {
+.directions-btn {
+    margin-left: 0;
+    margin-right: 8%;
+}
+
+.details-btn, .mobile-btn {
+    padding: 7px;
     border-radius: 5px;
-    margin: 2px;
     display: inline-block;
     width: 45%;
     font-size: 80%;
@@ -90,6 +76,10 @@
 
 .phone, .desktop-phone, .phone-number, .directions, .car {
     color: #f39231;
+}
+
+.phone-number {
+    font-size: 13px;
 }
 
 .fa-car {

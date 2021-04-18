@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import MobileTruckCard from './MobileTruckCard';
 import MobileModal from './MobileModal';
-import Map from '../Map';
+import MobileMap from './MobileMap';
 import mobileLogo from '../../assets/rioseo-logo-mobile.png';
 import axios from 'axios';
 import testData from '../TestData';
@@ -37,7 +37,7 @@ const MobileHome = () => {
         {mapSelected ? 
         <>
             <div className="wrapper">
-                <Map 
+                <MobileMap 
                     className="MobileMap"
                     clickedTruck={clickedTruck} 
                     showModal={showModal}

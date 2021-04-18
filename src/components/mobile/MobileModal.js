@@ -1,7 +1,7 @@
 import React from 'react';
 import car from '../../assets/car.png'
 import phone from '../../assets/phone-icon.png';
-import mountain from '../../assets/mountain.png'
+import mountain from '../../assets/mountains.png'
 import '../../styles/mobile/MobileModal.css';
 
 const MobileModal = ({ clickedTruck, showModal, setShowModal }) => {
@@ -17,15 +17,15 @@ const MobileModal = ({ clickedTruck, showModal, setShowModal }) => {
         if (today === id) {
             return (
                 <div>
-                    <p className="modal-date" id={id}><strong>{day}</strong></p>
-                    <p className="modal-times"><strong>{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</strong></p>
+                    <p className="mobile-modal-date" id={id}><strong>{day}</strong></p>
+                    <p className="mobile-modal-times"><strong>{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</strong></p>
                 </div>
             )
         }
         return (
             <div>
-                <p className="modal-date" id={id}>{day}</p>
-                <p className="modal-times">{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</p>
+                <p className="mobile-modal-date" id={id}>{day}</p>
+                <p className="mobile-modal-times">{clickedTruck[weekDateOpen]} - {clickedTruck[weekDateClose]}</p>
             </div>
         )
     }
@@ -33,26 +33,26 @@ const MobileModal = ({ clickedTruck, showModal, setShowModal }) => {
     return (
         <>
                 {showModal ? 
-                    <div className="modal-div">
+                    <div className="mobile-modal-div">
                         <div className="close-icon text-right" onClick={() => setShowModal(false)}>X</div>
-                        <img className="mountain" src={mountain} alt="mountain"/>
-                        <div className="modal-text">
-                            <h4>{name}</h4>
+                        <img className="mobile-mountain" src={mountain} alt="mountain"/>
+                        <div className="mobile-modal-text">
+                            <h4 className="mobile-modal-name">{name}</h4>
                             <br></br>
-                            <p>{address} </p>
-                            <p>{city}, {state} {postal_code}</p>
-                            <div className="modal-icons">
-                                <div className="phone">
+                            <h4 className="mobile-modal-address">{address} </h4>
+                            <h4 className="mobile-modal-address">{city}, {state} {postal_code}</h4>
+                            <div className="mobile-modal-icons">
+                                <div className="mobile-phone">
                                     <img src={phone} alt="phone"/>
-                                    <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
+                                    <a href="tel:1-562-867-5309" className="mobile-phone-number">562-867-5309</a>
                                 </div>
-                                <div className="directions">
+                                <div className="mobile-directions">
                                     <img src={car} alt="car"/>
-                                    <a href={directions} rel="noreferrer" target="_blank" className="car">Get Directions</a>
+                                    <a href={directions} rel="noreferrer" target="_blank" className="mobile-car">Get Directions</a>
                                 </div>
                             </div>
                             <br></br><br></br>
-                            <div className="modal-dates">
+                            <div className="mobile-modal-dates">
                                 {handleDate('Monday', 1)}
                                 {handleDate('Tuesday', 2)}
                                 {handleDate('Wednesday', 3)}

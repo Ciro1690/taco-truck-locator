@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DesktopTruckCard from './DesktopTruckCard';
-import Map from '../Map';
+import DesktopMap from './DesktopMap';
 import DesktopModal from './DesktopModal';
 import logo from '../../assets/rioseo-logo.png';
 import locationIcon from '../../assets/location-icon.png';
@@ -8,7 +8,7 @@ import axios from 'axios';
 import testData from '../TestData';
 import '../../styles/desktop/DesktopHome.css';
 
-const Home = () => {
+const DesktopHome = () => {
 
     const [trucks, setTrucks] = useState([]);
     const [clickedTruck, setClickedTruck] = useState({});
@@ -54,8 +54,8 @@ const Home = () => {
                         }
                     </div>
                     {mapSelected ?
-                    <div className="col map">
-                        <Map 
+                    <div className="col">
+                        <DesktopMap 
                             clickedTruck={clickedTruck} 
                             showModal={showModal}
                         />
@@ -75,4 +75,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default DesktopHome;

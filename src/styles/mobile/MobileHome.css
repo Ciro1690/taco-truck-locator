@@ -1,15 +1,8 @@
-.desktop-home {
-    margin: 0 100px;
-}
-
-.nav-desktop {
-    height: 75px;
-    padding: 20px 35px 15px 35px;
-    margin-bottom: 15px;
-}
-
-.location-desktop, .menu-desktop {
-    margin: 10px;
+.nav-mobile {
+    height: 11vh;
+    background-color: #444444;
+    padding: 7px 35px 15px 35px;
+    font-size: 35px;
 }
 
 .location-icon {
@@ -63,15 +56,6 @@
     position: relative;
 }
 
-.empty {
-    background-color: #d8d8d8;
-    margin-right: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
 .filtered-map {
     filter: brightness(30%);
 }
@@ -80,4 +64,15 @@
     margin-left: 6vh;
     margin-top: 8vh;
     margin-bottom: 3vh;
+}
+
+.mobile-empty {
+    background-color: #d8d8d8;
+    margin-right: 6vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
 }

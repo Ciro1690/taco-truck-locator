@@ -51,45 +51,25 @@ const MobileTruckCard = ({ truck, clickedTruck, setClickedTruck, setShowModal, s
 
     return (
         <>
-            <div className="mobile-card d-sm-none">
+            <div className="mobile-card">
                 <div className="inner-card">
-                    <h4>{name}</h4><br></br>
-                    <button
-                        className="address"
-                        onClick={justMap}>
-                        <h4>{address}</h4>
-                        <h4>{city}, {state} {postal_code}</h4>
-                    </button>
-                    <h4 className="open">Open today until {time}</h4>
-                    <div className="phone">
-                        <img src={phone} alt="phone" />
-                        <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
-                    </div>
-                    <br></br>
-                    <a href={directions} rel="noreferrer" target="_blank" className="mobile-btn btn btn-dark btn-sm">DIRECTIONS</a>
-                    <button className="mobile-btn btn btn-dark btn-sm" onClick={mapTruck}>MORE INFO</button>
-                </div>
-            </div>
-
-            <div className="desktop-main d-none d-sm-block">
-                <div className="desktop-card">
-                    <div className={clickedTruck.name === truck.name ? "selected-inner-card" : "desktop-inner-card"}>
-                        <h2>{name}</h2>
+                    <div className="card-text">
+                        <h4 className="mobile-card-name">{name}</h4>
                         <button
-                            onClick={justMap}
-                            className="address">
+                            className="address"
+                            onClick={justMap}>
                             <h4>{address}</h4>
                             <h4>{city}, {state} {postal_code}</h4>
                         </button>
                         <h4 className="open">Open today until {time}</h4>
-                        <div className="desktop-phone">
+                        <div className="phone">
                             <img src={phone} alt="phone" />
                             <a href="tel:1-562-867-5309" className="phone-number">562-867-5309</a>
                         </div>
-                        <br></br>
-                        <a href={directions} rel="noreferrer" target="_blank" className="mobile-btn btn btn-dark btn-sm">DIRECTIONS</a>
-                        <button className="mobile-btn btn btn-dark btn-sm" onClick={mapTruck}>MORE INFO</button>
                     </div>
+                    <br></br>
+                    <a href={directions} rel="noreferrer" target="_blank" className="directions-btn mobile-btn btn btn-dark btn-smm">DIRECTIONS</a>
+                    <button className="mobile-btn btn btn-dark btn-sm" onClick={mapTruck}>MORE INFO</button>
                 </div>
             </div>
         </>

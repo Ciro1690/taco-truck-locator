@@ -1,69 +1,86 @@
-.modal-div {
+.mobile-modal-div {
     position: absolute;
     top: 10px;  
     z-index: 5;
     background: white;
     text-align: left;
     line-height: 0.2;
-    font-size: 11px;
-    padding: 5px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 84%;
-    height: 69vh;
+    padding: 9px;
+    left: 20%;
+    width: 60%;
+    height: 94%;
 }
 
-.close-icon {
+.mobile-close-icon {
     position: relative;
-    font-size: 16px;
-    margin: 3px;
+    font-size: 12px;
+    margin-right: 5px;
+    color: #949396;
 }
 
-.modal-dates {
-    line-height: 0.1;
+.mobile-modal-dates {
+    line-height: 0.5;
     font-size: 10px;
-    margin-bottom: 13px;
+    margin-bottom: 2vh;
 }
 
-.modal-date {
+.mobile-modal-date, .mobile-phone {
     float: left;
 }
 
-.modal-times {
-    margin-left: 20vh;
+.mobile-modal-times {
+    margin-left: 48%;
 }
 
-.modal-dates p {
-    margin-bottom: 8px;
+.mobile-directions {
+    margin-left: 46%;
 }
 
-.details-btn {
+.mobile-modal-dates p {
+    margin-bottom: 10px;
+}
+
+.mobile-phone img, .mobile-directions img {
+    width: 11%;
+}
+
+.mobile-details-btn {
     width: 95%;
     color: lightgray;
 }
 
-.mountain {
-    width: 40vh;
+.mobile-mountain {
+    width: 75%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: block;  
     margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin-right: auto;       
 }
 
-.phone {
+.mobile-modal-name {
+    font-size: 12px;
+}
+
+.mobile-modal-address {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.mobile-number {
     float: left;
 }
 
-.directions {
-    margin-left: 20vh;
+.mobile-modal-text {
+    margin-left: 5vh;
 }
 
-.modal-text {
-    margin-left: 10vh;
-}
-
-.modal-icons {
+.mobile-modal-icons {
     width: 100%;
-    height: 7vh;
+    height: 4vh;
+}
+
+.mobile-phone-number, .mobile-car {
+    font-size: 10px;
+    color: #f39231;
 }

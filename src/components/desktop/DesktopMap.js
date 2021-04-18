@@ -2,7 +2,7 @@ import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 require('dotenv').config()
 
-const Map = ({clickedTruck, showModal}) => {
+const DesktopMap = ({clickedTruck, showModal}) => {
     const location = {lat: clickedTruck.latitude, lng: clickedTruck.longitude}
     const filteredMapStyles = {
         height: "70vh",
@@ -31,8 +31,8 @@ const Map = ({clickedTruck, showModal}) => {
             </GoogleMap >
             </LoadScript>
             :
-            <div>Click a location card to load the map</div>
+            <div className="mobile-empty">Click a location card to load the map</div>
     )
 }
 
-export default Map;
+export default DesktopMap;
