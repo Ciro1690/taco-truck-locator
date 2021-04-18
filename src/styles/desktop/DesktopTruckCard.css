@@ -11,6 +11,7 @@
     border: 1px solid lightgray;
     height: 80vh;
     overflow-x: hidden;
+    margin-left: 6vh;
 }
 
 .desktop-truck-card::-webkit-scrollbar {

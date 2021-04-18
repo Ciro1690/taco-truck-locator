@@ -6,7 +6,7 @@ import logo from '../../assets/rioseo-logo.png';
 import locationIcon from '../../assets/location-icon.png';
 import axios from 'axios';
 import testData from '../TestData';
-import '../../styles/Home.css';
+import '../../styles/desktop/DesktopHome.css';
 
 const Home = () => {
 
@@ -34,7 +34,7 @@ const Home = () => {
                 <p className="location-desktop nav-right"><img src={locationIcon} alt="location-icon" />Truck Locator</p>
                 <p className="menu-desktop nav-right">Menu</p>
             </nav>
-            <h4 className="text-left m-3">Found {trucks.length} Taco Trucks</h4>
+            <h2 className="truck-count text-left">Found {trucks.length} Taco Trucks</h2>
 
             <div className="container-fluid">
                 <div className="row">

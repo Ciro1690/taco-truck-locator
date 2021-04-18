@@ -1,0 +1,101 @@
+.mobile-card {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  padding: 15px;
+}
+
+.desktop-truck-card {
+    overflow: scroll;
+    height: 500px;
+    border: 1px solid lightgray;
+    height: 80vh;
+    overflow-x: hidden;
+    margin-left: 6vh;
+}
+
+.desktop-truck-card::-webkit-scrollbar {
+  width: .5em;
+  border-radius: 5px;
+}
+ 
+.desktop-truck-card::-webkit-scrollbar-thumb {
+  background-color: #444444;
+  outline: 1px solid #444444;
+}
+
+.desktop-card {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.desktop-phone {
+    font-size: 14px;
+}
+
+.address {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-align: left;
+}
+
+.desktop-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.map {
+    width: 50%;
+    background-color: #d8d8d8;
+}
+
+.inner-card {
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.desktop-inner-card {
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+.selected-inner-card {
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.open {
+    color: #47a07a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mobile-btn {
+    border-radius: 5px;
+    margin: 2px;
+    display: inline-block;
+    width: 45%;
+    font-size: 80%;
+    color: lightgray;
+}
+
+.phone, .desktop-phone, .phone-number, .directions, .car {
+    color: #f39231;
+}
+
+.fa-car {
+    float: left;
+}
+
+h4 {
+    font-size: 18px;
+}

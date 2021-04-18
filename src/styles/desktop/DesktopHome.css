@@ -72,7 +72,7 @@
 
 .empty {
     background-color: #d8d8d8;
-    margin-right: 50px;
+    margin-right: 6vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -81,4 +81,10 @@
 
 .filtered-map {
     filter: brightness(30%);
+}
+
+.truck-count {
+    margin-left: 6vh;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
 }

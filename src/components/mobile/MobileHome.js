@@ -5,7 +5,7 @@ import Map from '../Map';
 import mobileLogo from '../../assets/rioseo-logo-mobile.png';
 import axios from 'axios';
 import testData from '../TestData';
-import '../../styles/Home.css';
+import '../../styles/mobile/MobileHome.css';
 
 const MobileHome = () => {
 

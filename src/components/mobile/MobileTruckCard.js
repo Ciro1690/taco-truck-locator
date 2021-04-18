@@ -1,6 +1,6 @@
 import React from 'react';
 import phone from '../../assets/phone-icon.png';
-import '../../styles/TruckCard.css';
+import '../../styles/mobile/MobileTruckCard.css';
 
 const MobileTruckCard = ({ truck, clickedTruck, setClickedTruck, setShowModal, setMapSelected }) => {
 

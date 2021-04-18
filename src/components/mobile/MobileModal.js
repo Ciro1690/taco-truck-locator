@@ -2,7 +2,7 @@ import React from 'react';
 import car from '../../assets/car.png'
 import phone from '../../assets/phone-icon.png';
 import mountain from '../../assets/mountain.png'
-import '../../styles/Modal.css';
+import '../../styles/mobile/MobileModal.css';
 
 const MobileModal = ({ clickedTruck, showModal, setShowModal }) => {
 

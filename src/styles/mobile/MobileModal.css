@@ -1,0 +1,69 @@
+.modal-div {
+    position: absolute;
+    top: 10px;  
+    z-index: 5;
+    background: white;
+    text-align: left;
+    line-height: 0.2;
+    font-size: 11px;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 84%;
+    height: 69vh;
+}
+
+.close-icon {
+    position: relative;
+    font-size: 16px;
+    margin: 3px;
+}
+
+.modal-dates {
+    line-height: 0.1;
+    font-size: 10px;
+    margin-bottom: 13px;
+}
+
+.modal-date {
+    float: left;
+}
+
+.modal-times {
+    margin-left: 20vh;
+}
+
+.modal-dates p {
+    margin-bottom: 8px;
+}
+
+.details-btn {
+    width: 95%;
+    color: lightgray;
+}
+
+.mountain {
+    width: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.phone {
+    float: left;
+}
+
+.directions {
+    margin-left: 20vh;
+}
+
+.modal-text {
+    margin-left: 10vh;
+}
+
+.modal-icons {
+    width: 100%;
+    height: 7vh;
+}

@@ -1,0 +1,83 @@
+.desktop-home {
+    margin: 0 100px;
+}
+
+.nav-desktop {
+    height: 75px;
+    padding: 20px 35px 15px 35px;
+    margin-bottom: 15px;
+}
+
+.location-desktop, .menu-desktop {
+    margin: 10px;
+}
+
+.location-icon {
+    color: white;
+}
+
+.fas fa-bars {
+    color: white;
+}
+.fa-map-marker, .fa-bars  {
+    color: white;
+}
+
+.nav-logo {
+    padding-bottom: 15px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10
+}
+
+.nav-list, .nav-map {
+    width: 50%;
+    padding: 15px;
+    font-size: 16px;
+    border: none
+}
+
+.orange {
+    color: white;
+    background-color: #f39231;
+}
+
+.white {
+    background-color: white;
+    color: #f39231;  
+}
+
+.wrapper {
+    position: relative;
+}
+
+.empty {
+    background-color: #d8d8d8;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.filtered-map {
+    filter: brightness(30%);
+}
+
+.truck-count {
+    margin-left: 6vh;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+}
