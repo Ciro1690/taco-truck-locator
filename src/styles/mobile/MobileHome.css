@@ -1,8 +1,10 @@
 .nav-mobile {
-    height: 7vh;
+    height: 7%;
     background-color: #444444;
-    padding: 7px 35px 15px 35px;
+    padding: 9px 20px 0 20px;
     font-size: 35px;
+    position: fixed;
+    width: 100%;
 }
 
 .location-icon {
@@ -17,7 +19,7 @@
 }
 
 .nav-logo {
-    padding-bottom: 15px;
+    padding-bottom: 21px;
 }
 
 .nav-left {
