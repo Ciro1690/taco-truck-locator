@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import DesktopTruckCard from './DesktopTruckCard';
 import DesktopMap from './DesktopMap';
 import DesktopModal from './DesktopModal';
-import logo from '../../assets/rioseo-logo.png';
 import locationIcon from '../../assets/location-icon.png';
 import axios from 'axios';
 import testData from '../TestData';
@@ -30,7 +29,6 @@ const DesktopHome = () => {
     return (
         <div className="desktop-home">
             <nav className="nav-desktop">
-                <img className="nav-left" src={logo} alt="logo" />
                 <p className="location-desktop nav-right"><img src={locationIcon} alt="location-icon" />Truck Locator</p>
                 <p className="menu-desktop nav-right">Menu</p>
             </nav>

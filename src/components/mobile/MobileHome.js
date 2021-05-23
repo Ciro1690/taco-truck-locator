@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import MobileTruckCard from './MobileTruckCard';
 import MobileModal from './MobileModal';
 import MobileMap from './MobileMap';
-import mobileLogo from '../../assets/rioseo-logo-mobile.png';
 import axios from 'axios';
 import testData from '../TestData';
 import '../../styles/mobile/MobileHome.css';
@@ -30,7 +29,6 @@ const MobileHome = () => {
         <>
             <nav className="nav-mobile">
                 <i className="fas fa-bars nav-left"></i>
-                <img className="nav-logo" src={mobileLogo} alt="logo" />
                 <i className="location-icon fa fa-map-marker nav-right" aria-hidden="true"></i>
             </nav>
 
